@@ -57,7 +57,14 @@ function updateScore(room, player, score) {
 	xhttp.send(score)
 }
 
-function keksen() {
-	
+function keksen(room) {
+	console.log("Keeeeeeeksen!!!")
+
+	for (var i = 0; i >= 30; i++) {
+		var scores = [Math.floor(Math.random() * 1000), Math.floor(Math.random() * 1000)]
+
+		updateScore(room, 0, scores[0]);
+		updateScore(room, 1, scores[1])
+	}
 }
 
